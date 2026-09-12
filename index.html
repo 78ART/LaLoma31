@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeSuro AR</title>
+    <!-- Cargamos la versión estable del visor -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #f3f4f6; }
+        model-viewer { width: 100vw; height: 100vh; display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- Llamamos directamente al archivo de tu bicicleta sin rutas raras -->
+    <model-viewer src="Loma_31_5.glb" 
+                  ar 
+                  ar-modes="webxr scene-viewer quick-look" 
+                  camera-controls 
+                  touch-action="pan-y"
+                  shadow-intensity="1" 
+                  auto-rotate
+                  camera-orbit="90deg 75deg auto"
+        >
+    </model-viewer>
+
+</body>
+</html>
